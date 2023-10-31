@@ -21,14 +21,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tutorial.md",
+                "file": "01 - Azure AD Provider Installation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "28d425583a102d1a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Azure AD Provider Installation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -94,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tutorial.md",
+                "file": "01 - Azure AD Provider Installation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tutorial.md",
+                "file": "01 - Azure AD Provider Installation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tutorial.md"
+                "file": "01 - Azure AD Provider Installation.md"
               }
             }
           }
@@ -155,13 +167,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a2c756018044db2b",
+  "active": "28d425583a102d1a",
   "lastOpenFiles": [
+    "02 - Entra ID Managed Resources.md",
+    "resources/Pasted image 20231101011756.png",
+    "resources/Pasted image 20231101011629.png",
+    "resources/Pasted image 20231101011404.png",
+    "01 - Azure AD Provider Installation.md",
+    "resources/Pasted image 20231101011321.png",
+    "resources/Resources.md",
     "Installation.md",
     "resources/kind-config.yaml",
     "resources/az-provider.yaml",
     "resources/az-provider-config.yaml",
-    "resources",
-    "Tutorial.md"
+    "resources"
   ]
 }
