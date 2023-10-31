@@ -1,4 +1,4 @@
-# upbound/provider-azuread
+# Upbound/provider-azuread
 
 ## Installing UP Cli
 ``` bash
@@ -92,6 +92,7 @@ EOF
 # kubectl apply -f az-provider.yaml
 
 # kubectl get provider
+
 NAME             INSTALLED   HEALTHY   PACKAGE                                         AGE
 provider-azuread   True        True      xpkg.upbound.io/upbound/provider-azuread:v0.1.0   58s
 
@@ -99,6 +100,8 @@ provider-azuread   True        True      xpkg.upbound.io/upbound/provider-azurea
 
 
 ```
+
+
 
 
 # References

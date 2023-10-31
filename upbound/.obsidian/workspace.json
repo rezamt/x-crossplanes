@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Installation.md",
+                "file": "Tutorial.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Installation.md",
+                "file": "Tutorial.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Installation.md",
+                "file": "Tutorial.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Installation.md"
+                "file": "Tutorial.md"
               }
             }
           }
@@ -157,11 +157,11 @@
   },
   "active": "a2c756018044db2b",
   "lastOpenFiles": [
+    "Installation.md",
     "resources/kind-config.yaml",
     "resources/az-provider.yaml",
     "resources/az-provider-config.yaml",
     "resources",
-    "Tutorial.md",
-    "Installation.md"
+    "Tutorial.md"
   ]
 }
