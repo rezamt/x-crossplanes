@@ -1,12 +1,11 @@
 # upbound/provider-azuread
 
-## Installation
+## Installing UP Cli
 ``` bash
-# Install upbound cli
-# https://github.com/upbound/up
+# Install upbound cli - https://github.com/upbound/up
 brew install upbound/tap/up
 
-# Check
+# Check Installation : run up
 # up
 up
 Usage: up <command>
@@ -42,7 +41,7 @@ Run "up <command> --help" for more information on a command.
 
 ```
 
-## Run a K8s local
+## Running a K8s local cluster (using Kind)
 ```
 # Using Kind
 brew install kind
@@ -61,13 +60,50 @@ EOF
 # Creat the Cluster
 kind create cluster --name x-crossplane --config kind-config.yaml
 
+# Installing Metal-lb LB on Kind
+
 
 ```
 ## Installing upbound/provider-azuread
 
+```bash
+
+# Install Universal Crossplane
+up uxp install
+
+# check the state
+kubectl get pods -n upbound-system
+
+NAME                                       READY   STATUS    RESTARTS   AGE
+crossplane-779968bb44-2v5sr                1/1     Running   0          42s
+crossplane-rbac-manager-6f8d84b588-t5ggs   1/1     Running   0          42s
+
+
+# Install the official Azuread provider
+# cat > az-provider.yaml <<EOF
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-azuread
+spec:
+  package: xpkg.upbound.io/upbound/provider-azuread:v0.13.0
+EOF
+
+# kubectl apply -f az-provider.yaml
+
+# kubectl get provider
+NAME             INSTALLED   HEALTHY   PACKAGE                                         AGE
+provider-azuread   True        True      xpkg.upbound.io/upbound/provider-azuread:v0.1.0   58s
+
+
+
+
+```
 
 
 # References
 - [Upbound Cli](https://github.com/upbound/up)
 - [Kind Cluster](https://mcvidanagama.medium.com/set-up-a-multi-node-kubernetes-cluster-locally-using-kind-eafd46dd63e5)
-- [upbound / provider-azuread](https://marketplace.upbound.io/providers/upbound/provider-azure/v0.38.1/docs/quickstart)
+- [upbound / provider-azuread](https://github.com/upbound/provider-azuread)
+- [upbound / provider-azuread quickstart](https://marketplace.upbound.io/providers/upbound/provider-azure/v0.38.1/docs/quickstart)
+- 
